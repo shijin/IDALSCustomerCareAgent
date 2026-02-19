@@ -72,17 +72,17 @@ Goals:
 
 ## 3. Components and responsibilities
 
-* `idals_qna.csv` — canonical FAQ content (two columns: `question`, `answer`).
-* `faq_loader.py` — CSV to Document loader (robust to encoding and missing headers).
-* `vector_store.py` — builds FAISS from chunked FAQ documents and Bedrock embeddings.
-* `tools.py` — tool wrappers (`search_faq`) used by the agent.
-* `router.py` — intent classifier prompt that maps queries to intents.
-* `agent.py` — core routing logic, escalation detection, final synthesis prompt.
-* `agentcore_runtime.py` — Bedrock AgentCore entrypoint for production runtime.
-* `lambda_function.py` — Twilio webhook -> sanitize sessionId -> invoke AgentCore or Agent HTTP endpoint.
-* `whatsapp_sender.py` — helper for sending outbound WhatsApp messages through Twilio.
-* `analytics.py` / `analytics_store.py` — append structured events to `agent_analytics.csv`.
-* `ui.py` / `analytics_dashboard.py` — Streamlit-based test UI and analytics dashboard.
+* `idals_qna.csv` - canonical FAQ content (two columns: `question`, `answer`).
+* `faq_loader.py` - CSV to Document loader (robust to encoding and missing headers).
+* `vector_store.py` - builds FAISS from chunked FAQ documents and Bedrock embeddings.
+* `tools.py` - tool wrappers (`search_faq`) used by the agent.
+* `router.py` - intent classifier prompt that maps queries to intents.
+* `agent.py` - core routing logic, escalation detection, final synthesis prompt.
+* `agentcore_runtime.py` - Bedrock AgentCore entrypoint for production runtime.
+* `lambda_function.py` - Twilio webhook -> sanitize sessionId -> invoke AgentCore or Agent HTTP endpoint.
+* `whatsapp_sender.py` - helper for sending outbound WhatsApp messages through Twilio.
+* `analytics.py` / `analytics_store.py` - append structured events to `agent_analytics.csv`.
+* `ui.py` / `analytics_dashboard.py` - Streamlit-based test UI and analytics dashboard.
 * `query_normalizer.py` - Cleans user input, handles spelling variations, normalized hinglish mixed language queries, improves intent classification accuracy.
 * `language_normalizer.py` - Detects user language (English/Hinglish), ensures response language consistency, prevents language mismatch hallucinations.
 * `escalation_detector.py` - Detects legal questions, job guarantees, refund amounts, government approval queries. Prevents unsafe or misleading responses.
