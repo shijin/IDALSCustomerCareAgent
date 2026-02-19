@@ -253,6 +253,10 @@ idals-customer-careagent/
 ├─ ui.py                         # Streamlit testing UI
 ├─ analytics_dashboard.py        # Streamlit analytics dashboard
 ├─ requirements.txt
+├─ query_normalizer.py
+├─ language_normalizer.py
+├─ escalation.py
+├─ escalation_detector.py
 └─ idals_qna.csv
 ```
 
