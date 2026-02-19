@@ -247,7 +247,7 @@ idals-customer-careagent/
 ## 13. Video Walkthrough
 
 ## 14. Author  
-Shijin Ramesh
+Shijin Ramesh  
 [LinkedIn](https://www.linkedin.com/in/shijinramesh/) | [Portfolio](https://www.shijinramesh.co.in/)
 
 ## Appendix — quick reference commands
