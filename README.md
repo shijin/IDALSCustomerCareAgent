@@ -126,6 +126,7 @@ uvicorn app:app --reload
 streamlit run ui.py
 streamlit run analytics_dashboard.py  # analytics UI
 ```
+![Streamlit UI](images/customer-care-streamlit.JPG)
 
 ## 5. Deployment & AWS setup
 
