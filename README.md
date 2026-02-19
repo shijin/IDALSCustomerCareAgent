@@ -83,8 +83,12 @@ Goals:
 * `whatsapp_sender.py` — helper for sending outbound WhatsApp messages through Twilio.
 * `analytics.py` / `analytics_store.py` — append structured events to `agent_analytics.csv`.
 * `ui.py` / `analytics_dashboard.py` — Streamlit-based test UI and analytics dashboard.
+* `query_normalizer.py` - Cleans user input, handles spelling variations, normalized hinglish mixed language queries, improves intent classification accuracy.
+* `language_normalizer.py` - Detects user language (English/Hinglish), ensures response language consistency, prevents language mismatch hallucinations.
+* `escalation_detector.py` - Detects legal questions, job guarantees, refund amounts, government approval queries. Prevents unsafe or misleading responses.
+* `escalation.py` - Centralized escalation responses. Ensures no policy violations, human handoff consistency, zero hallucination in sensitive cases.
 
-## 4. Local development — quick start
+## 4. Local development - quick start
 
 ### Prereqs
 
@@ -147,6 +151,22 @@ streamlit run analytics_dashboard.py  # analytics UI
 
 * Use Twilio sandbox / approved WhatsApp number.
 * Configure webhook to point to your public endpoint (API Gateway -> Lambda) or ngrok during local testing.
+
+### AgentCore (AWS Bedrock) Deployment
+
+This agent was originally deployed using **Amazon Bedrock AgentCore**, enabling:
+
+- Managed runtime execution
+- Built-in observability & tracing
+- Secure model access via IAM
+- Session memory support (STM)
+
+The AgentCore runtime was validated using real invocations during development.
+Due to cold-start initialization limits (30s) with heavy LangChain dependencies,
+the live AgentCore endpoint is not kept active for demo purposes.
+
+The same agent logic is currently showcased via a FastAPI + Streamlit interface,
+ensuring identical behavior and responses.
 
 ## 6. Environment variables & configuration
 
