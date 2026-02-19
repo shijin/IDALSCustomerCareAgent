@@ -41,9 +41,9 @@ Goals:
 
 ### Production-Level Architecture
 
-[Layer 1 & 2](images/enterprise-architecture1.JPG)
-[Layer 3,4 & 5](images/enterprise-architecture2.JPG)
-[Critical Flow Constraints](images/enterprise-architecture3.JPG)
+![Layer 1 & 2](images/enterprise-architecture1.JPG)
+![Layer 3,4 & 5](images/enterprise-architecture2.JPG)
+![Critical Flow Constraints](images/enterprise-architecture3.JPG)
 
 ### ASCII fallback diagram
 
