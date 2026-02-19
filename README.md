@@ -82,7 +82,7 @@ Goals:
 * `lambda_function.py` — Twilio webhook -> sanitize sessionId -> invoke AgentCore or Agent HTTP endpoint.
 * `whatsapp_sender.py` — helper for sending outbound WhatsApp messages through Twilio.
 * `analytics.py` / `analytics_store.py` — append structured events to `agent_analytics.csv`.
-* `ui.py` / `streamlit_app.py` — Streamlit-based test UI and analytics dashboard.
+* `ui.py` / `analytics_dashboard.py` — Streamlit-based test UI and analytics dashboard.
 
 ## 4. Local development — quick start
 
