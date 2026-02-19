@@ -37,7 +37,7 @@ Goals:
 
 ### High-Level System Architecture diagram 
 
-[System Architecture](images/system-architecture.JPG)
+![System Architecture](images/system-architecture.JPG)
 
 ### Production-Level Architecture
 
